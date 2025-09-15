@@ -1,5 +1,7 @@
+using TMPro;
 using UnityEditor.SearchService;
 using UnityEngine;
+using UnityEngine.TextCore.LowLevel;
 
 public class BabyCounter : MonoBehaviour
 {
@@ -12,6 +14,8 @@ public class BabyCounter : MonoBehaviour
     [SerializeField] GameObject Loss;
     [SerializeField] GameObject Win;
 
+    [SerializeField] TextMeshProUGUI greenBabiesCounted, pinkBabiesCounted;
+
     void Update()
     {
         ReadPlayerInputs();
@@ -22,10 +26,12 @@ public class BabyCounter : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.S))
         {
             greenBabies += 1;
+            greenBabiesCounted.text = "Babies: " + greenBabies.ToString();
         }
         if (Input.GetKeyDown(KeyCode.L))
         {
             pinkBabies += 1;
+            pinkBabiesCounted.text = "Babies: " + pinkBabies.ToString();
         }
     }
 

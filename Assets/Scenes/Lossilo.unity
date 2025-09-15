@@ -400,7 +400,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &222182871
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1536,6 +1536,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::BabyCounter
   Loss: {fileID: 222182870}
   Win: {fileID: 324785735}
+  greenBabiesCounted: {fileID: 1413131548}
+  pinkBabiesCounted: {fileID: 1172013314}
 --- !u!4 &1061558531
 Transform:
   m_ObjectHideFlags: 0
@@ -1608,7 +1610,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Babies:'
+  m_text: 'Babies: 0
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5fc7defb79c0fe74a83369122e9fbc97, type: 2}
   m_sharedMaterial: {fileID: 1188077193356561700, guid: 5fc7defb79c0fe74a83369122e9fbc97, type: 2}
@@ -1954,7 +1958,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Babies:'
+  m_text: 'Babies: 0 '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5fc7defb79c0fe74a83369122e9fbc97, type: 2}
   m_sharedMaterial: {fileID: 1188077193356561700, guid: 5fc7defb79c0fe74a83369122e9fbc97, type: 2}
